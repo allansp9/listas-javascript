@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 1</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+		html, body{
+			height: 100%;
+		}
+		.is-flex {
+			height:100%;
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row is-flex">
+			<div class="col-md-8 col-md-offset-4">
+				<h1 id="h1">My Header</h1>
+			</div>
+			<div class="col-md-8 col-md-offset-4">
+				Número: <input type="number" name="valor" id="valor" max="999"><br>
+				<button onclick="cor()">Enviar</button>
+			</div>
+		</div>
+		
+	</div>
+
+	<script>
+		function cor(){
+			var x = document.getElementById('valor').value;
+
+			if (x == 0){
+				document.getElementById('h1').style.color = "blue";
+			} else if (x == 1) {
+				document.getElementById('h1').style.color = "red";
+			} else if (x == 2) {
+				document.getElementById('h1').style.color = "yellow";
+			} else {
+				document.getElementById('h1').innerHTML = "Erro";
+
+			}
+		}
+	</script>
+</body>
+</html>
