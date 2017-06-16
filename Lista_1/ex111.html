@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 11.1</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<button id="botao" onclick="retornaQtA('EssA String contem palavras')">OK</button>
+			
+		</div>
+		
+	</div>
+
+	<script>
+		function retornaQtA(string){
+			
+			var frase = string;
+
+			var qtupper = 0;
+			var qtlower = 0;
+
+			for (letra of frase) {
+				if (letra === 'A') {
+					qtupper++;
+				}
+
+				if (letra === 'a') {
+					qtlower++;
+				}
+			}
+			
+			document.body.append('Quantidade de A: ' + qtupper + ' Quantidade de a: ' + qtlower);
+			
+		}
+	</script>
+</body>
+</html>

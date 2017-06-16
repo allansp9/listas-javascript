@@ -1,0 +1,83 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 10</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<button id="botao" onclick="makeTable(['Azul', 'verde', 'rosA', 'preto', 'branco', 'abAcAxi'])">OK</button>
+			
+		</div>
+		
+	</div>
+
+	<script>
+		function makeTable(array){
+			
+			var vetor = array,
+				body = document.getElementsByTagName('body')[0],
+				table = document.createElement('table'),
+				tr = document.createElement('tr'),
+
+				th = document.createElement('th');
+			th.innerHTML = "palavra";
+			tr.append(th);
+
+			var th = document.createElement('th');
+			th.innerHTML = "qt letras A";
+			tr.append(th);
+
+			var th = document.createElement('th');
+			th.innerHTML = "porcentagem de A";
+			tr.append(th);
+
+				table.append(tr);
+				body.append(table);
+
+				vetor.forEach(function(cor) {
+					var qtupper = 0;
+
+					for (var i = 0; i < cor.length; i++) {
+						if (cor[i] === 'A') {
+					 		qtupper++;
+					 	}
+					}
+					
+					var tr = document.createElement('tr');
+
+					var	td = document.createElement('td');
+					td.append(cor);
+					tr.append(td);
+
+					var	td = document.createElement('td');
+					td.append(qtupper);
+					tr.append(td);
+
+					var perce = Math.floor(qtupper / cor.length * 100);
+					var	td = document.createElement('td');
+					td.append(perce + '%');
+					tr.append(td);
+
+					table.append(tr);
+
+				});
+
+				body.append(table);
+
+				table.classList.add('table');
+
+
+
+				
+			
+			
+		}
+	</script>
+</body>
+</html>
