@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 4</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<p id="p1">Esse tem menos</p>
+			<p id="p2">Esse parágrafo tem mais letras</p>
+
+			<button onclick="pintaParag()">Enviar</button>
+
+					
+		</div>
+		
+	</div>
+
+	<script>
+		function pintaParag(){
+			var p1 = document.getElementById('p1');
+			var p2 = document.getElementById('p2');
+
+			if (p1.length > p2.length){
+				p1.style.color = "green";
+				p2.style.color = "red";
+
+			} else {
+				p2.style.color = "green";
+				p1.style.color = "red";
+
+			}	
+		}
+	</script>
+</body>
+</html>

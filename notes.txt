@@ -1,2 +1,4 @@
 usar indexof para checkar se um pedaço de texto existe em outro
 !isNaN com parseInt para verificar se é um número
+
+.style para mudar o css

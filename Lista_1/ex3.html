@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 3</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li>Conteudo da li 1</li>
+				<li>Conteudo da li 2</li>
+				<li>Conteudo da li 3</li>
+				<li>Conteudo da li 4</li>
+			</ul>
+
+			<button onclick="escreveLi()">Enviar</button>
+
+					
+		</div>
+		
+	</div>
+
+	<script>
+		function escreveLi(){
+			lis = document.getElementsByTagName('li');
+			for (li of lis) {
+				// document.write(li.innerHTML);
+				console.log(li.innerHTML);
+			}
+		}
+	</script>
+</body>
+</html>
