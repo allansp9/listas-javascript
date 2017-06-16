@@ -10,3 +10,11 @@ achar % = porcentagem / valor total * 100
 split quebra uma string em varias strings
 reverse inverte um array
 join transforma um array em string
+
+document.querySelector() // seleciona o primeiro match
+
+element.cloneNode(true) //copia um elemento e seus filhos
+
+document.body.append // insere depois do ultimo filho
+
+append aceita strings, appendChild apenas objects

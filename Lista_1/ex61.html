@@ -1,0 +1,40 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 6.1</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+
+		<p>Conteúdo do parágrafo 1</p>
+		<p>Conteúdo do parágrafo 2</p>
+		<p>Conteúdo do parágrafo 3</p>
+		<p>Conteúdo do parágrafo 4</p>
+			
+			<button onclick="pegaPara()">Enviar</button>
+
+					
+		</div>
+		
+	</div>
+
+	<script>
+		function pegaPara(){
+			
+			var todosP = document.querySelectorAll('p');
+			
+			for (cadaP of todosP) {
+			var newP = cadaP.cloneNode(true);
+			document.body.appendChild(newP);	
+			}
+			
+		}
+	</script>
+</body>
+</html>
