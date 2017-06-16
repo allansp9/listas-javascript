@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 5.1</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<p id="p1">0</p>
+			<p id="p2">0</p>
+
+			<button onclick="somaNum()">Enviar</button>
+
+					
+		</div>
+		
+	</div>
+
+	<script>
+		function somaNum(){
+			var n1 = parseInt(document.getElementById('p1').innerHTML);	
+			var n2 = parseInt(document.getElementById('p2').innerHTML);	
+
+			if (n1+n2 > 0){
+				alert(n1+n2);
+			}
+		}
+	</script>
+</body>
+</html>

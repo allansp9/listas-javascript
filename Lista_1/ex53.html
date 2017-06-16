@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 5.3</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			
+			<button onclick="percentNeg([1, 5, -2, 4, -8, 99, 73, 100])">Enviar</button>
+
+					
+		</div>
+		
+	</div>
+
+	<script>
+		function percentNeg(vetor){
+			
+			var arr = vetor;
+			var negativos = 0;
+			for (i of arr) {
+				if(i < 0){
+					negativos++;
+					console.log(negativos);
+				}
+			}
+
+			alert(Math.floor(negativos/arr.length*100) + '%');
+		}
+	</script>
+</body>
+</html>

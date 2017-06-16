@@ -2,3 +2,11 @@ usar indexof para checkar se um pedaço de texto existe em outro
 !isNaN com parseInt para verificar se é um número
 
 .style para mudar o css
+
+for (i of object) {}
+
+achar % = porcentagem / valor total * 100
+
+split quebra uma string em varias strings
+reverse inverte um array
+join transforma um array em string
