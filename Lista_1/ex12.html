@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 12</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+			#output{
+				height: 50px;
+				width: 200px;
+			}	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			Cor: <input type="text" name="cor" id="cor">
+			<button id="botao" onclick="pintaDiv()">OK</button>
+
+			<br>
+
+			<div id="output"></div>
+			
+		</div>
+		
+	</div>
+
+	<script>
+		function pintaDiv(){
+			
+			cor = document.getElementById('cor').value;
+
+			if (cor[0] === '#') {
+				for (var i = 1; i < cor.length; i++) {
+					if (parseInt(cor[i], 16)) {
+						document.getElementById('output').style.backgroundColor = cor;
+					} else {
+						alert('valor incorreto!');
+						return;
+					}
+				}
+			} else {
+				alert('valor incorreto!');
+			}
+			
+		}
+	</script>
+</body>
+</html>

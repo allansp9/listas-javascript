@@ -23,3 +23,5 @@ classList.contains() // verifica se o elemento tem essa classe
 classList.remove()
 classList.add()
 
+parseInt(var, 16) pode ser usado para checar se é hexadec
+
