@@ -18,3 +18,8 @@ element.cloneNode(true) //copia um elemento e seus filhos
 document.body.append // insere depois do ultimo filho
 
 append aceita strings, appendChild apenas objects
+
+classList.contains() // verifica se o elemento tem essa classe
+classList.remove()
+classList.add()
+

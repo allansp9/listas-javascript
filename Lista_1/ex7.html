@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 7</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			
+			<button id="botao" onclick="mudaBotao()">OK</button>
+			
+		</div>
+		
+	</div>
+
+	<script>
+		function mudaBotao(){
+			
+			var botao = document.getElementById('botao');
+
+			if (botao.classList.contains('clickado')) {
+				botao.classList.remove('clickado');
+				botao.innerHTML = "OK";
+			} else {
+				botao.classList.add('clickado');
+				botao.innerHTML = "Click";
+			}
+			
+		}
+	</script>
+</body>
+</html>
