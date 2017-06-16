@@ -22,7 +22,7 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<button id="botao" onclick="setTimeut(pintaDiv, 400)">OK</button>
+			<button id="botao" onclick="setInterval(pintaDiv, 400)">OK</button>
 
 			<br>
 
@@ -37,7 +37,7 @@
 			
 			div = document.getElementById('dv1');
 
-			if div.classList.contains('yellow') {
+			if (div.classList.contains('yellow')) {
 				div.classList.remove('yellow');
 				div.classList.add('red');
 			} else {
