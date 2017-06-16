@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 10</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<button id="botao" onclick="makeTable(['azul', 'verde', 'rosa', 'preto', 'branco'])">OK</button>
+			
+		</div>
+		
+	</div>
+
+	<script>
+		function makeTable(array){
+			
+			var vetor = array,
+				body = document.getElementsByTagName('body')[0],
+				table = document.createElement('table'),
+				tr = document.createElement('tr'),
+
+				th = document.createElement('th');
+			th.innerHTML = "id";
+			tr.append(th);
+
+			var th = document.createElement('th');
+			th.innerHTML = "nomes";
+			tr.append(th);
+
+				table.append(tr);
+				body.append(table);
+
+				vetor.forEach(function(cor, index, array) {
+					var tr = document.createElement('tr');
+
+					var	td = document.createElement('td');
+					td.append(index);
+					tr.append(td);
+
+					var	td = document.createElement('td');
+					td.append(cor);
+					tr.append(td);
+
+					table.append(tr);
+
+				});
+
+				body.append(table);
+
+				table.classList.add('table');
+
+
+
+				
+			
+			
+		}
+	</script>
+</body>
+</html>
