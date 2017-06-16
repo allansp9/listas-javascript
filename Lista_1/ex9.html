@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 9</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			Email: <input type="email" name="email" id="email">
+			<button id="botao" onclick="validaEmail()">OK</button>
+			
+		</div>
+		
+	</div>
+
+	<script>
+		function validaEmail(){
+			
+			var email = document.getElementById('email').value;
+
+			if (email.indexOf('@') !== -1) {
+				alert('Email válido');
+			} else {
+				alert('Email inválido');
+			}
+
+
+				
+			
+			
+		}
+	</script>
+</body>
+</html>
