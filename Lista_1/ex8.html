@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 8</title>
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+
+	<style>
+				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			
+			<button id="botao" onclick="makeTable(['bananas', 'laranjas', 'tomates', 'cenouras'])">OK</button>
+			
+		</div>
+		
+	</div>
+
+	<script>
+		function makeTable(stringArr){
+			
+			var body = document.getElementsByTagName('body')[0],
+				table = document.createElement('table'),
+				stringVetor = stringArr;
+			
+			for (cada of stringVetor) {
+				var tr = document.createElement('tr'),
+					td = document.createElement('td');
+				td.append(cada);
+				tr.append(td);
+				table.append(tr);
+
+			}
+			body.append(table);
+				
+			
+			
+		}
+	</script>
+</body>
+</html>
