@@ -5,24 +5,17 @@
 	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
 
 	<style>
-			#dv1{
+			#output{
 				height: 50px;
 				width: 200px;
-			}
-
-			.yellow{
-				background-color: yellow;
-			}
-
-			.red {
-				background-color: red;
 			}	
 	</style>
 </head>
 <body>
 	<div class="container">
 		<div class="row">
-			<button id="botao" onclick="setTimeut(pintaDiv, 400)">OK</button>
+			Cor: <input type="text" name="cor" id="cor">
+			<button id="botao" onclick="pintaDiv()">OK</button>
 
 			<br>
 
@@ -35,14 +28,19 @@
 	<script>
 		function pintaDiv(){
 			
-			div = document.getElementById('dv1');
+			cor = document.getElementById('cor').value;
 
-			if div.classList.contains('yellow') {
-				div.classList.remove('yellow');
-				div.classList.add('red');
+			if (cor[0] === '#') {
+				for (var i = 1; i < cor.length; i++) {
+					if (parseInt(cor[i], 16)) {
+						document.getElementById('output').style.backgroundColor = cor;
+					} else {
+						alert('valor incorreto!');
+						return;
+					}
+				}
 			} else {
-				div.classList.remove('red');
-				div.classList.add('yellow');
+				alert('valor incorreto!');
 			}
 			
 		}

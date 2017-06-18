@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 1</title>
+</head>
+<body>
+
+
+	<script>
+
+		function qtChar(string) {
+
+			var s = string.split('')
+			var vogais = ['a', 'e', 'i', 'o', 'u']
+
+			var numchar = s.filter(function(num){
+				return !isNaN(parseInt(num, 10)); 
+
+			})
+			
+			var numvog = s.filter(function(letra){
+				return vogais.indexOf(letra.toLowerCase()) > -1;
+			})
+
+			alert(numchar.length + numvog.length);
+		}
+
+		qtChar('Blade Runner 2049');
+	</script>
+</body>
+</html>
