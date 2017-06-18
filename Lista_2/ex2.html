@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 2</title>
+</head>
+<body>
+	
+	<p>1</p>
+	<p>2</p>
+	<p>3</p>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+
+	<script>
+
+		function concatena() {
+
+			var tudo = Array.from(document.querySelectorAll('p, div'));
+			
+			var conca = tudo.reduce(function(acc, palavra){
+				return acc + palavra.innerHTML;
+
+			},'');
+
+			alert(conca);
+
+		}
+
+		concatena();
+	</script>
+</body>
+</html>
