@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 8</title>
+</head>
+<body>
+	
+	<script>
+
+		function somaMult(vetor) {
+			var filtered = vetor.filter(function(val){ 
+
+				return val % 7 === 0;
+				
+			}).reduce(function(acc, val){
+
+				return acc * val;
+
+			})
+
+			console.log(filtered)
+		
+		}
+
+		somaMult([1, 2, 3, 5, 7, 9, 12, 14]);
+	</script>
+</body>
+</html>
