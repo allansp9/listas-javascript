@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 5</title>
+</head>
+<body>
+	
+	<script>
+
+		function palindrome(vetor) {
+
+			var palin = vetor.filter(function(palavra){
+				return palavra === palavra.split('').reverse().join('');
+
+			})
+
+			console.log(palin);
+
+		}
+
+		palindrome(['boca', 'nariz', 'olho', 'anna', 'mussum']);
+	</script>
+</body>
+</html>
