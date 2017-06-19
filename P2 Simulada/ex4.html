@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 4</title>
+</head>
+<body>
+	
+	Altura: <input type="number" name='number' step='0.01' id='n1'>
+	Peso: <input type="number" name='number' step='0.01' id='n2'>
+
+	<br>
+	<br>
+
+	<button class="naoValido" id="btn1">GO</button>
+
+	
+
+	
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		
+		$('#btn1').click(function() {
+
+			var val1 = $('#n1').val();
+			var val2 = $('#n2').val();
+
+			if (val1 > 0 && val2 > 0) {
+
+				$(this).addClass('valido');
+				$(this).removeClass('naoValido');
+
+				alert('IMC: ' + Math.floor(val2 / Math.pow(val1, 2)));
+			} else {
+
+				$(this).addClass('naoValido');
+				$(this).removeClass('valido');
+
+				alert('erro');
+			}
+
+		})
+		
+
+
+	</script>
+
+</body>
+</html>
