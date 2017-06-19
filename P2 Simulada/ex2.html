@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 2</title>
+</head>
+<body>
+	
+	Number: <input type="number" name='number'>
+
+	<div id="d1"></div>
+
+	<br>
+	<br>
+
+	
+
+	
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		
+		$('input[type="number"]').change(function(){
+			var dobro = $(this).val() * 2;
+			$('#d1').html(dobro);
+			
+		})
+
+
+	</script>
+
+</body>
+</html>

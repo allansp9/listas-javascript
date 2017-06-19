@@ -28,6 +28,11 @@ parseInt(
 parseInt(var, 16) pode ser usado para checar se é hexadec
 
 Funções de alta ordem: são funções que recebem outras funções como parametro, ou que retornam funções.
+ex: map, reduce, filter
 
 Array.from transforma nodelist em array
+
+setAttribute('atr', 'value')
+
+
 
