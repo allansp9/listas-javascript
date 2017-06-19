@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 1</title>
+</head>
+<body>
+	
+	<img src="dog.jpg" alt="dog">
+	<img src="dog.jpg" alt="dog">
+	<img src="dog.jpg" alt="dog">
+
+	<br>
+	<br>
+
+	<button onclick="mudaImagem()">GO</button>
+
+
+	<script>
+		
+		function mudaImagem() {
+
+			var imgArr = Array.from(document.querySelectorAll('img'));
+
+			imgArr.map(function(img) {
+
+				img.setAttribute('src', 'error.png');
+
+			})
+		}
+	</script>
+
+</body>
+</html>

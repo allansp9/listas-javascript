@@ -1,5 +1,6 @@
 usar str.indexof(searchvalue) para checkar se um pedaço de texto existe em outro
-!isNaN com parseInt para verificar se é um número
+
+!isNaN(parseInt('0')) // para verificar se é um número
 
 .style para mudar o css
 
@@ -23,5 +24,10 @@ classList.contains() // verifica se o elemento tem essa classe
 classList.remove()
 classList.add()
 
+parseInt(
 parseInt(var, 16) pode ser usado para checar se é hexadec
+
+Funções de alta ordem: são funções que recebem outras funções como parametro, ou que retornam funções.
+
+Array.from transforma nodelist em array
 
